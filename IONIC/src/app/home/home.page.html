@@ -1,0 +1,15 @@
+
+<ion-content>
+<p> LES UTILISATEURS ACTIFS</p>
+ <ion-item *ngFor="let users of userList">
+  <ion-list>
+    {{ users.nom }}
+    {{ users.prenom }}
+  </ion-list>
+</ion-item>
+<ion-item>
+<ion-button routerLink="/recherche">RECHERCHER</ion-button>
+</ion-item>
+</ion-content>
+
+

@@ -1,0 +1,31 @@
+<ion-header>
+
+</ion-header>
+<br>
+<br>
+<ion-content>
+  <ion-item>
+    <div class="logo">
+      <ion-icon name="person-circle-outline"></ion-icon>
+    </div>
+  </ion-item>
+  <form #recup='ngForm' (ngSubmit)='recupData(recup)'>
+    <ion-item >
+      <ion-label color="light">Email</ion-label>
+      <ion-input name='mail' ngModel color="light" type="text" placeholder="Adresse email"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label color="light">Mot de passe</ion-label>
+      <ion-input name='password' ngModel color="light" type="password" placeholder="Mot de passe"></ion-input>
+    </ion-item>
+    <ion-item lines="none">
+      <ion-button routerLink="/mot-oublie" color="secondary" slot="end" fill="clear">Mot de passe oublié ?</ion-button>
+    </ion-item>
+    <ion-item lines="none">
+      <ion-button routerLink="/reinit" color="secondary" slot="end" fill="clear">Réinitialiser</ion-button>
+    </ion-item>
+    <ion-button type='submit' color="light" expand="block" shape="round" fill="outline">Connexion</ion-button>
+  <ion-button routerLink="/inscription" color="tertiary" expand="block" shape="round">Inscription</ion-button>
+  </form>
+</ion-content>

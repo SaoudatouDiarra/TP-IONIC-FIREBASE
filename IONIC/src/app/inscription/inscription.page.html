@@ -1,0 +1,23 @@
+<ion-content>
+  <form #data="ngForm" (ngSubmit)="signUp(data)">
+    <ion-item >
+      <ion-label color="light">Nom</ion-label>
+      <ion-input name="nom" ngModel color="light" type="text" placeholder="Nom"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label color="light">Prénom</ion-label>
+      <ion-input name="prenom" ngModel color="light" type="text" placeholder="prénom"></ion-input>
+    </ion-item>
+    <ion-item >
+      <ion-label color="light">Email</ion-label>
+      <ion-input name="mail" ngModel color="light" type="text" placeholder="Adresse email"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label color="light">Mot de passe</ion-label>
+      <ion-input name="password" ngModel color="light" type="password" placeholder="Mot de passe"></ion-input>
+    </ion-item>
+    <ion-button type="submit"  color="tertiary" expand="block" shape="round">s'inscrire</ion-button>
+  </form>
+</ion-content>
